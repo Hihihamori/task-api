@@ -1,5 +1,7 @@
 def greet(name: str) -> str:
-    return f'Привет, {name}!'
+
+    return f'ПРИВЕТ, {name.upper()}!'
+
 
 
 if __name__ == '__main__':
