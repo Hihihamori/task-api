@@ -1,10 +1,12 @@
 # task-api
-Fast Api task manager
 
+CRUD-сервис для управления задачами. FastAPI + Docker + автодеплой.
 
-# Mentoring week 05
+## Локальный запуск
 
-Учебный репозиторий: Git + FastAPI.
+    conda create -y -n task-api python=3.11
+    conda activate task-api
+    pip install -r requirements.txt
+    uvicorn app.main:app --reload
 
-**Автор**: Гоша Георгий
-**Начало работы**: 2026-10-19
+Документация: http://localhost:8000/docs
