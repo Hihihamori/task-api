@@ -52,10 +52,3 @@ jobs:
           tags: |
             ${{ env.IMAGE }}:${{ github.sha }}
             ${{ env.IMAGE }}:latest
-    runs-on: ubuntu-latest
-    needs: test
-    steps:
-      - uses: actions/checkout@v7
-
-      - name: Build Docker image
-        run: docker build -t task-api:${{ github.sha }} .
